@@ -457,17 +457,36 @@ input::placeholder{
 .footer-link{
     color: #82ae46;
 }
+
+
 @media (max-width: 990px) {
     .navbar-nav {
-        display: none !important;
+        display: flex; 
+        flex-direction: column; 
+    }
+    .menuu {
+        display: none;
+    }
+    .menuu.miniMenu {
+        display: flex !important; 
+        background-color: #82ae46;
+        border: solid 2px #000000;
+        width: 100%;
+        margin-top: 6px;
+    }
+    .menuu li a {
+        font-size: 16px;
+        padding: 10px;
     }
 }
+
 @media (max-width: 720px){
     .vegetable{
         height: 330px;
     }
 }
 @media (max-width: 600px){
+    
     h1{
         font-size: 31px;
     }
@@ -478,3 +497,4 @@ input::placeholder{
         left: 40%;
     }
 }
+
